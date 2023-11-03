@@ -58,6 +58,8 @@ bool		g_DisableWaterLighting = false;
 bool		g_bAllowDetailCracks = false;
 bool		g_bAllowDynamicPropsAsStatic = false;
 bool		g_bNoVirtualMesh = false;
+bool		g_bPropperInsertAllAsStatic = false;
+bool		g_bPropperStripEntities = false;
 
 float		g_defaultLuxelSize = DEFAULT_LUXEL_SIZE;
 float		g_luxelScale = 1.0f;
@@ -1145,6 +1147,14 @@ int RunVBSP( int argc, char **argv )
 		{
 			EnableFullMinidumps( true );
 		}
+		else if ( !Q_stricmp( argv[i], "-defaultproppermodelsstatic" ) )
+		{
+			g_bPropperInsertAllAsStatic = true;
+		}
+		else if ( !Q_stricmp( argv[i], "-strippropperentities" ) )
+		{
+			g_bPropperStripEntities = true;
+		}
 		else if (argv[i][0] == '-')
 		{
 			Warning("VBSP: Unknown option \"%s\"\n\n", argv[i]);
@@ -1232,6 +1242,11 @@ int RunVBSP( int argc, char **argv )
 				"  -nox360		   : Disable generation Xbox360 version of vsp (default)\n"
 				"  -replacematerials : Substitute materials according to materialsub.txt in content\\maps\n"
 				"  -FullMinidumps  : Write large minidumps on crash.\n"
+				"  -defaultproppermodelsstatic: All propper_models will be inserted into the BSP\n"
+				"                               as static props by default, unless InsertAsStaticProp equals 1.\n"
+				"  -strippropperentities: Removes all entities with propper_ in their classname.\n"
+				"                         This is to avoid a bunch of Propper entities attempting\n"
+				"                         to spawn in-game despite them being internal entities.\n"
 				);
 			}
 
