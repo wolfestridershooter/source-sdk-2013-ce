@@ -906,10 +906,6 @@ int RunVBSP( int argc, char **argv )
 
 	Msg( "Valve Software - vbsp.exe (%s)\n", __DATE__ );
 
-#if defined( BSP_INCREASE_LIMITS )
-	Msg( "Compiling with increased BSP limits; proceed at your own risk!\n" );
-#endif
-
 	for (i=1 ; i<argc ; i++)
 	{
 		if (!stricmp(argv[i],"-threads"))
