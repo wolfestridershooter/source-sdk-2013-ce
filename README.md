@@ -9,6 +9,12 @@
 
 </div>
 
+
+
+BEEP BEEP Thank you THE-HAVOK (Look at the bottom of the commit): https://github.com/ValveSoftware/source-sdk-2013/commit/fd3c17eff24be4c5d66d9fd4fe2e1fb90101f77a
+
+
+
 # Source SDK 2013 Community Edition
 Source 2013 CE is a clean fork of Valve's [Source SDK 2013 repo](https://github.com/valveSoftware/source-sdk-2013) 
 with the goal of fixing up the SDK and to provide a clean bloat-free codebase that works out of the box to make developers' lives easier.
