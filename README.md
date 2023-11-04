@@ -12,7 +12,7 @@
 
 
 BEEP BEEP Thank you THE-HAVOK (Look at the bottom of the commit): https://github.com/ValveSoftware/source-sdk-2013/commit/fd3c17eff24be4c5d66d9fd4fe2e1fb90101f77a
-
+Also what started this all: https://github.com/wouterpleizier/source-sdk-2013
 
 
 # Source SDK 2013 Community Edition
