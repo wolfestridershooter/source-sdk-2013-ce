@@ -675,7 +675,7 @@ struct dedge_t
 	unsigned short	v[2];		// vertex numbers
 };
 
-#define	MAXLIGHTMAPS	8
+#define	MAXLIGHTMAPS	4
 
 enum dprimitive_type
 {
