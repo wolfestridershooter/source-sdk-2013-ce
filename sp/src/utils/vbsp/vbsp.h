@@ -366,6 +366,7 @@ extern	bool		g_DisableWaterLighting;
 extern	bool		g_bAllowDetailCracks;
 extern	bool		g_bAllowDynamicPropsAsStatic;
 extern	bool		g_bNoVirtualMesh;
+extern	bool		g_bNoHiddenManifestMaps;
 extern	bool		g_bPropperInsertAllAsStatic;
 extern	bool		g_bPropperStripEntities;
 extern	char		outbase[32];

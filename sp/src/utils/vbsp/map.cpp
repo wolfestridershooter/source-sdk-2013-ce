@@ -1971,6 +1971,18 @@ bool CMapFile::DeterminePath( const char *pszBaseFileName, const char *pszInstan
 }
 
 
+static void VerifyNoInstances(CMapFile *pMap)
+{
+	for ( int i = 0; i < pMap->num_entities; i++ )
+	{
+		char *pEntity = ValueForKey( &pMap->entities[ i ], "classname" );
+		if ( !strcmp( pEntity, "func_instance" ) )
+		{
+			Error("This level contains func_instance entities, which cannot be processed without FGD information. See the previous message.");
+		}
+	}
+}
+
 //-----------------------------------------------------------------------------
 // Purpose: this function will check the main map for any func_instances.  It will
 //			also attempt to load in the gamedata file for instancing remapping help.
@@ -1992,6 +2004,7 @@ void CMapFile::CheckForInstances( const char *pszFileName )
 	if ( !GameInfoKV )
 	{
 		Msg( "Could not locate gameinfo.txt for Instance Remapping at %s\n", GameInfoPath );
+		VerifyNoInstances(this);
 		return;
 	}
 
@@ -2005,6 +2018,7 @@ void CMapFile::CheckForInstances( const char *pszFileName )
 	if ( !GameDataFile )
 	{
 		Msg( "Could not locate 'GameData' key in %s\n", GameInfoPath );
+		VerifyNoInstances(this);
 		return;
 	}
 
@@ -2504,7 +2518,9 @@ void CMapFile::MergeEntities( entity_t *pInstanceEntity, CMapFile *Instance, Vec
 
 	MoveBrushesToWorldGeneral( WorldspawnEnt );
 	WorldspawnEnt->numbrushes = 0;
-	WorldspawnEnt->epairs = NULL;
+	char *pIsTopLevel = ValueForKey( pInstanceEntity, "toplevel" );
+	if ( strcmp( pIsTopLevel, "1" ) )
+		WorldspawnEnt->epairs = NULL;
 }
 
 
