@@ -1,5 +1,5 @@
-# Forked from Source SDK 2013 Community Edition
-(https://github.com/Nbc66/source-sdk-2013-ce)
+# Source SDK 2013 Extended Compilers
+Forked from: Source SDK 2013 Community Edition: https://github.com/Nbc66/source-sdk-2013-ce
 
 # Info
 This is a fork of Source 2013 CE with the goal of fixing up Source 2013's compile tools with miscellaneous fixes and performance improvments to make map makers' lives easier.
@@ -22,7 +22,8 @@ Vanilla lighting unlike Slammin's VRAD which is slightly different with the same
 Large address aware, allowing for more memory usage on 64-bit systems.
 
 # New limits
-
+Vanilla VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/original_vbsp_limits.md
+Extended VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/extended_vbsp_limits.md
 
 # New commands
 -nodefaultcubemap: Don't generate a default cubemap. <-----(This fixes not being able to build cubemaps on some PCs)
@@ -60,7 +61,7 @@ https://github.com/Nbc66/source-sdk-2013-ce/commit/e70875d0d85e91cff7965416e64d6
 <p>False debug counter fix: ValveSoftware/source-sdk-2013#436<br>
 Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/1c3f381ed304637d9377931d19e665305ce17201</p>
 
-<p>VDC increase thread pool for compilers https://developer.valvesoftware.com/wiki/Increased_Thread_Limit_for_Compile_Tools<br>
+<p>VDC increase thread pool for compilers: https://developer.valvesoftware.com/wiki/Increased_Thread_Limit_for_Compile_Tools<br>
 Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/dc01ad40f94e961497493594634a1cf9419508fb</p>
 
 <p>Custom shader vbsp fix: ValveSoftware/source-sdk-2013#200<br>
