@@ -22,8 +22,8 @@ Vanilla lighting unlike Slammin's VRAD which is slightly different with the same
 Large address aware, allowing for more memory usage on 64-bit systems.
 
 # New limits
-Vanilla VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/original_vbsp_limits.md
-Extended VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/extended_vbsp_limits.md
+Vanilla VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/vanilla_vbsp_limits.txt
+Extended VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/extended_vbsp_limits.txt
 
 # New commands
 -nodefaultcubemap: Don't generate a default cubemap. <-----(This fixes not being able to build cubemaps on some PCs)
