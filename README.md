@@ -17,7 +17,12 @@ Far increased compile limits. (sometimes doubled or quadrupled!)
 New commands. (See the new commands section)
 Some optimizations that can in some cases more than half your compile times.
 Propper prop_static intergration.
+Support for func_detail_blocker.
 Vanilla lighting unlike Slammin's VRAD which is slightly different with the same settings and can mess up lighting on func_brushs.
+Large address aware, allowing for more memory usage on 64-bit systems.
+
+# New limits
+
 
 # New commands
 -nodefaultcubemap: Don't generate a default cubemap. <-----(This fixes not being able to build cubemaps on some PCs)
@@ -46,26 +51,26 @@ As of July 2023, CE has been tested on Visual Studio 2022 with the latest versio
 I'd appreciate any form of help so ideally if you want to help this project out the best way would be to make a pull request.
 
 # Credits in order of their implimentation
-The insperation for this fork: https://github.com/wouterpleizier/source-sdk-2013
-A small fix for detail props (Look at the bottom of the commit, THE-HAVOK's comment): https://github.com/ValveSoftware/source-sdk-2013/commit/fd3c17eff24be4c5d66d9fd4fe2e1fb90101f77a
+<p>The insperation for this fork: https://github.com/wouterpleizier/source-sdk-2013<br>
+A small fix for detail props (Look at the bottom of the commit, THE-HAVOK's comment): https://github.com/ValveSoftware/source-sdk-2013/commit/fd3c17eff24be4c5d66d9fd4fe2e1fb90101f77a</p>
 
-Disable skyboxed cubemap, staticprops for on any model, and increased compile general limits: https://github.com/wouterpleizier/source-sdk-2013
-https://github.com/Nbc66/source-sdk-2013-ce/commit/e70875d0d85e91cff7965416e64d65cbb8dce9f8
+<p>Disable skyboxed cubemap, staticprops for on any model, support for func_detail_blocker, and increased compile general limits: https://github.com/wouterpleizier/source-sdk-2013<br>
+https://github.com/Nbc66/source-sdk-2013-ce/commit/e70875d0d85e91cff7965416e64d65cbb8dce9f8</p>
 
-False debug counter fix: ValveSoftware/source-sdk-2013#436
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/1c3f381ed304637d9377931d19e665305ce17201
+<p>False debug counter fix: ValveSoftware/source-sdk-2013#436<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/1c3f381ed304637d9377931d19e665305ce17201</p>
 
-VDC increase thread pool for compilers https://developer.valvesoftware.com/wiki/Increased_Thread_Limit_for_Compile_Tools
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/dc01ad40f94e961497493594634a1cf9419508fb
+<p>VDC increase thread pool for compilers https://developer.valvesoftware.com/wiki/Increased_Thread_Limit_for_Compile_Tools<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/dc01ad40f94e961497493594634a1cf9419508fb</p>
 
-Custom shader vbsp fix: ValveSoftware/source-sdk-2013#200
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/474eda071dbdc6ffe0ffb48b17bca9a944e4eda4
+<p>Custom shader vbsp fix: ValveSoftware/source-sdk-2013#200<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/474eda071dbdc6ffe0ffb48b17bca9a944e4eda4</p>
 
-func_detail smoothing group fix: ValveSoftware/source-sdk-2013#391
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/70941050b51341110650e2f9c46683af6ff604f8
+<p>func_detail smoothing group fix: ValveSoftware/source-sdk-2013#391<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/70941050b51341110650e2f9c46683af6ff604f8</p>
 
-VBSP features for Propper: mapbase-source/source-sdk-2013#143
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/ba1c1d585391045f64ed1b77818b7ffec110c5f3
+<p>VBSP features for Propper: mapbase-source/source-sdk-2013#143<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/ba1c1d585391045f64ed1b77818b7ffec110c5f3</p>
 
-A bunch of miscellaneous vbsp fixes: https://github.com/DeathByNukes/source-sdk-2013
-Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/b5863641c093368c6d1c91b12f314936af6eebae
+<p>A bunch of miscellaneous vbsp fixes: https://github.com/DeathByNukes/source-sdk-2013<br>
+Commit: https://github.com/Nbc66/source-sdk-2013-ce/commit/b5863641c093368c6d1c91b12f314936af6eebae</p>
