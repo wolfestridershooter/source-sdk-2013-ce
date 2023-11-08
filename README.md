@@ -26,7 +26,7 @@ Vanilla VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/mas
 Extended VBSP: https://github.com/wolfestridershooter/source-sdk-2013-ce/blob/master/extended_vbsp_limits.txt
 
 # New commands
--nodefaultcubemap: Don't generate a default cubemap. <-----(This fixes not being able to build cubemaps on some PCs)
+-nodefaultcubemap: Don't generate a default cubemap. <-(This fixes not being able to build cubemaps on some PCs)
 
 -allowdynamicpropsasstatic: Allow all models with the 'static' flag in the model viewer to be used on prop_static, even when their propdata doesn't contain 'allowstatic'
 
