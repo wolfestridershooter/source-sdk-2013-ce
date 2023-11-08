@@ -1,5 +1,5 @@
 # Source SDK 2013 Extended Compilers
-Forked from: Source SDK 2013 Community Edition: https://github.com/Nbc66/source-sdk-2013-ce
+Forked from Source SDK 2013 Community Edition: https://github.com/Nbc66/source-sdk-2013-ce
 
 # Info
 This is a fork of Source 2013 CE with the goal of fixing up Source 2013's compile tools with miscellaneous fixes and performance improvments to make map makers' lives easier.
